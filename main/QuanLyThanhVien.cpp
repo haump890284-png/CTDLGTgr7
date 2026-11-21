@@ -160,13 +160,21 @@ void suaThongTin(FamilyTree& t) {
     if (!nhapHoTen("Ho ten [" + p->hoTen + "]: ", ten, true)) return;
     if (p->cha && !nhapHoTen("Quan he [" + p->quanHe + "]: ", qh, true)) return;
     if (!nhapNamHopLe(ns, nm, p->cha, p)) return;
-    // Kiem tra rang buoc voi cac con: con khong duoc sinh truoc cha/me
-    for (ChildNode* c = p->con; c; c = c->next)
+    // Kiem tra rang buoc voi cac con (sua loi BUG_EDIT_01)
+    for (ChildNode* c = p->con; c; c = c->next) {
+        // con khong duoc sinh truoc cha/me
         if (c->p->namSinh < ns) {
             cout << "  [!] Khong sua duoc: con \"" << c->p->hoTen << "\" sinh nam "
                  << c->p->namSinh << " som hon nam sinh moi.\n";
             return;
         }
+        // cung quy tac voi luc them: con sinh sau khi cha/me mat qua 1 nam la khong hop le
+        if (nm != 0 && c->p->namSinh > nm + 1) {
+            cout << "  [!] Khong sua duoc: con \"" << c->p->hoTen << "\" sinh nam "
+                 << c->p->namSinh << " sau nam mat moi (" << nm << ") cua cha/me.\n";
+            return;
+        }
+    }
     p->hoTen = ten; p->quanHe = qh; p->namSinh = ns; p->namMat = nm;
     cout << "  Da cap nhat.\n";
 }
