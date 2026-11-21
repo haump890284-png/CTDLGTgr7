@@ -1,16 +1,16 @@
 #ifndef FAMILY_RELATIONS_H
 #define FAMILY_RELATIONS_H
 
-#include "DataStructures.h"
+#include "Tree.h"
 #include <string>
 
 using namespace std;
 
-void printPersonSummary(PersonNode* p);
-void viewAncestor(PersonNode* root);
-void findParents(PersonNode* root, const string& targetName);
-void showSpouses(PersonNode* root, const string& targetName);
-void findSiblings(PersonNode* root, const string& targetName);
-void showChildren(PersonNode* root, const string& targetName);
+void inTomTatThanhVien(const Person* p);
+void xemCuTo(const FamilyTree& t);
+void timChaMe(FamilyTree& t);
+void hienThiVoChong(FamilyTree& t);
+void timAnhChiEm(FamilyTree& t);
+void hienThiConCai(FamilyTree& t);
 
 #endif
