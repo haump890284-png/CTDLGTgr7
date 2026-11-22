@@ -1,6 +1,6 @@
 # QUẢN LÝ CÂY GIA PHẢ (C++ – Tree & Linked List)
 
-Đồ án học phần **Cấu trúc dữ liệu và Giải thuật** (Mã học phần: `124002`)  
+Đồ án học phần **Cấu trúc dữ liệu và Giải thuật** (Mã học phần: `012012400204`)  
 **Trường:** Đại học Giao thông Vận tải TP. Hồ Chí Minh (UTH) – Ban Công nghệ số  
 **Giảng viên hướng dẫn:** TS. Lê Văn Quốc Anh  
 **Nhóm:** Chủ đề 7
