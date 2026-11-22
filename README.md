@@ -31,15 +31,37 @@ Toàn bộ mã nguồn và tệp kiểm thử nằm trong thư mục `main/`:
 Di chuyển vào thư mục chứa mã nguồn trước khi chạy lệnh:
 ```powershell
 cd main
+```
+
+**1. Biên dịch và chạy chương trình chính:**
+```powershell
 g++ -std=c++11 -Wall -Wextra -pedantic main.cpp Tree.cpp linkedList.cpp QuanLyThanhVien.cpp FamilyRelations.cpp -o main.exe
 .\main.exe
+```
 
+**2. Chạy kiểm thử module Tree (`24/24 PASS`):**
+```powershell
 g++ -std=c++11 -Wall -Wextra -pedantic test_Tree.cpp Tree.cpp linkedList.cpp -o test_Tree.exe
 .\test_Tree.exe
+```
 
+**3. Chạy kiểm thử tích hợp 10 test case (`IT01 – IT10`):**
+```powershell
 cmd /c "main.exe < test_input.txt > test_log.txt"
+```
 
+**4. Biên dịch và chạy đo hiệu năng (Benchmark):**
+```powershell
 g++ -std=c++11 -O2 benchmark.cpp Tree.cpp linkedList.cpp -o benchmark.exe
 .\benchmark.exe
+```
 
+## Kết quả kiểm thử tóm tắt
+- **Unit Test module Tree (`test_Tree.cpp`):** `24/24 PASS`.
+- **Kiểm thử tích hợp (`IT01 – IT10`):** `10/10 PASS` (đối chiếu trong `main/test_log.txt`).
+- **Benchmark tìm kiếm theo ID (10.000 lượt):**
+  - `100` thành viên: `1,3565 ms` (trung bình `0,00013565 ms`/lần)
+  - `500` thành viên: `10,9967 ms` (trung bình `0,00109967 ms`/lần)
+  - `1.000` thành viên: `27,6319 ms` (trung bình `0,00276319 ms`/lần)
 
+> **Lưu ý:** Không đưa `test_Tree.cpp` hoặc `benchmark.cpp` vào lệnh biên dịch `main.exe` vì các tệp này có hàm `main()` riêng.
