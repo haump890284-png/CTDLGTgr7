@@ -31,3 +31,15 @@ Toàn bộ mã nguồn và tệp kiểm thử nằm trong thư mục `main/`:
 Di chuyển vào thư mục chứa mã nguồn trước khi chạy lệnh:
 ```powershell
 cd main
+g++ -std=c++11 -Wall -Wextra -pedantic main.cpp Tree.cpp linkedList.cpp QuanLyThanhVien.cpp FamilyRelations.cpp -o main.exe
+.\main.exe
+
+g++ -std=c++11 -Wall -Wextra -pedantic test_Tree.cpp Tree.cpp linkedList.cpp -o test_Tree.exe
+.\test_Tree.exe
+
+cmd /c "main.exe < test_input.txt > test_log.txt"
+
+g++ -std=c++11 -O2 benchmark.cpp Tree.cpp linkedList.cpp -o benchmark.exe
+.\benchmark.exe
+
+
