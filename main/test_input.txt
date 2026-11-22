@@ -1,0 +1,83 @@
+1
+Nguyen Van A
+1965
+2020
+2
+Nguyen Van A
+Nguyen Van B
+con trai
+1995
+0
+
+2
+Nguyen Van A
+Nguyen Thi C
+con gai
+1996
+0
+
+2
+Nguyen Thi C
+Nguyen Van D
+con trai
+2022
+0
+
+abc
+12a
+4
+99
+10
+3
+2
+5
+4
+4
+3
+0
+11
+3
+1
+Tran Van X
+11
+3
+3
+Tran Van X
+Tran Van Y
+11
+3
+2
+Tran Van Y
+11
+3
+0
+2
+Nguyen Van A
+Nguyen Van E
+con trai
+2000
+1995
+2000
+0
+
+2
+Nguyen Van B
+Nguyen Van B
+con trai
+2023
+0
+
+5
+Nguyen Van B
+9
+Nguyen Thi C
+c
+12
+9
+Nguyen Van A
+k
+9
+Nguyen Van A
+c
+12
+0

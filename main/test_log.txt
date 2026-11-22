@@ -1,0 +1,441 @@
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ho ten cu to: Nhap nam sinh: Nhap nam mat (0 neu con song): Tao cu to thanh cong. ID: 1
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [THEM] Chon CHA/ME cua nguoi moi:
+  Nhap ho ten can tim: Ho ten: Quan he voi cha/me (vd: con trai, con gai): Nam sinh: Nam mat (0 = con song):   Da them "Nguyen Van B" (ID 2).
+Them ten vo/chong? (Enter = bo qua): 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [THEM] Chon CHA/ME cua nguoi moi:
+  Nhap ho ten can tim: Ho ten: Quan he voi cha/me (vd: con trai, con gai): Nam sinh: Nam mat (0 = con song):   Da them "Nguyen Thi C" (ID 3).
+Them ten vo/chong? (Enter = bo qua): 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [THEM] Chon CHA/ME cua nguoi moi:
+  Nhap ho ten can tim: Ho ten: Quan he voi cha/me (vd: con trai, con gai): Nam sinh: Nam mat (0 = con song):   Da them "Nguyen Van D" (ID 4).
+Them ten vo/chong? (Enter = bo qua): 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Du lieu khong hop le. Vui long nhap so nguyen.
+Nhap lua chon: Du lieu khong hop le. Vui long nhap so nguyen.
+Nhap lua chon: Nhap ID can tim: Khong tim thay thanh vien.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: 
+========== TRA CUU QUAN HE GIA DINH =========
+1. Xem thong tin cu to
+2. Tim thong tin cha/me
+3. Xem danh sach vo/chong
+4. Tim anh/chi/em
+5. Xem danh sach con cai
+0. Quay lai
+=============================================
+Chon chuc nang: Nhap ID thanh vien can tra cuu: 
+--- DANH SACH VO/CHONG ---
+Thanh vien: Nguyen Van B (ID 2)
+[Thong bao] Thanh vien chua co thong tin vo/chong.
+
+========== TRA CUU QUAN HE GIA DINH =========
+1. Xem thong tin cu to
+2. Tim thong tin cha/me
+3. Xem danh sach vo/chong
+4. Tim anh/chi/em
+5. Xem danh sach con cai
+0. Quay lai
+=============================================
+Chon chuc nang: Nhap ID thanh vien can tra cuu: 
+--- DANH SACH CON CAI ---
+Thanh vien: Nguyen Van D (ID 4)
+[Thong bao] Thanh vien hien chua co con cai.
+
+========== TRA CUU QUAN HE GIA DINH =========
+1. Xem thong tin cu to
+2. Tim thong tin cha/me
+3. Xem danh sach vo/chong
+4. Tim anh/chi/em
+5. Xem danh sach con cai
+0. Quay lai
+=============================================
+Chon chuc nang: Nhap ID thanh vien can tra cuu: 
+--- DANH SACH ANH/CHI/EM ---
+Thanh vien: Nguyen Thi C (ID 3)
+[Anh/Chi]   - ID: 2 | Ho ten: Nguyen Van B | Nam sinh: 1995 | Nam mat: Con song | Quan he: con trai
+
+========== TRA CUU QUAN HE GIA DINH =========
+1. Xem thong tin cu to
+2. Tim thong tin cha/me
+3. Xem danh sach vo/chong
+4. Tim anh/chi/em
+5. Xem danh sach con cai
+0. Quay lai
+=============================================
+Chon chuc nang: 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ID thanh vien: Danh sach vo/chong cua Nguyen Thi C: Khong co
+1. Them vo/chong
+2. Xoa vo/chong
+3. Doi ten vo/chong
+0. Quay lai
+Chon: Nhap ten vo/chong: Da them vo/chong.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ID thanh vien: Danh sach vo/chong cua Nguyen Thi C: Tran Van X
+1. Them vo/chong
+2. Xoa vo/chong
+3. Doi ten vo/chong
+0. Quay lai
+Chon: Nhap ten cu: Nhap ten moi: Da doi ten.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ID thanh vien: Danh sach vo/chong cua Nguyen Thi C: Tran Van Y
+1. Them vo/chong
+2. Xoa vo/chong
+3. Doi ten vo/chong
+0. Quay lai
+Chon: Nhap ten can xoa: Da xoa vo/chong.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ID thanh vien: Danh sach vo/chong cua Nguyen Thi C: Khong co
+1. Them vo/chong
+2. Xoa vo/chong
+3. Doi ten vo/chong
+0. Quay lai
+Chon: 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [THEM] Chon CHA/ME cua nguoi moi:
+  Nhap ho ten can tim: Ho ten: Quan he voi cha/me (vd: con trai, con gai): Nam sinh: Nam mat (0 = con song):   [!] Nam mat (1995) nho hon nam sinh (2000). Moi nhap lai.
+Nam sinh: Nam mat (0 = con song):   Da them "Nguyen Van E" (ID 5).
+Them ten vo/chong? (Enter = bo qua): 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [THEM] Chon CHA/ME cua nguoi moi:
+  Nhap ho ten can tim: Ho ten: Quan he voi cha/me (vd: con trai, con gai): Nam sinh: Nam mat (0 = con song):   Da them "Nguyen Van B" (ID 6).
+Them ten vo/chong? (Enter = bo qua): 
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Nhap ho ten can tim: Tim thay 2 ket qua:
+
+--- Ket qua 1 ---
+
+Ma thanh vien : 2
+Ho va ten     : Nguyen Van B
+Quan he       : con trai
+Nam sinh      : 1995
+Nam mat       : Con song
+Vo/chong      : Khong co
+
+--- Ket qua 2 ---
+
+Ma thanh vien : 6
+Ho va ten     : Nguyen Van B
+Quan he       : con trai
+Nam sinh      : 2023
+Nam mat       : Con song
+Vo/chong      : Khong co
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [XOA] Chon nguoi can xoa:
+  Nhap ho ten can tim:   Se xoa "Nguyen Thi C" va 1 nguoi la con chau. Xac nhan? (c/k):   Da xoa 2 nguoi.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: ========== CAY GIA PHA (4 nguoi) ==========
+Nguyen Van A (1965-2020)  [ID 1]
+|-- Nguyen Van B (1995-nay)  [ID 2]
+|   `-- Nguyen Van B (2023-nay)  [ID 6]
+`-- Nguyen Van E (2000-nay)  [ID 5]
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [XOA] Chon nguoi can xoa:
+  Nhap ho ten can tim:   Se xoa "Nguyen Van A" va 3 nguoi la con chau (day la CU TO -> xoa toan bo cay!). Xac nhan? (c/k):   Da huy.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: [XOA] Chon nguoi can xoa:
+  Nhap ho ten can tim:   Se xoa "Nguyen Van A" va 3 nguoi la con chau (day la CU TO -> xoa toan bo cay!). Xac nhan? (c/k):   Da xoa 4 nguoi.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon:   Cay gia pha dang rong.
+
+========== QUAN LY CAY GIA PHA =========
+1. Tao cu to
+2. Them thanh vien (TV4)
+3. Hien thi cay theo tung doi
+4. Tim thanh vien theo ID
+5. Tim thanh vien theo ho ten
+6. Thong ke cay gia pha
+7. Them the he phia tren cu to
+8. Sua thong tin thanh vien (TV4)
+9. Xoa thanh vien (TV4)
+10. Tra cuu quan he gia dinh (TV5)
+11. Quan ly danh sach vo/chong (TV3)
+12. Hien thi cay dang phan cap (TV4)
+13. Xem thong tin chi tiet thanh vien (TV4)
+0. Thoat
+========================================
+Nhap lua chon: Da thoat chuong trinh.
