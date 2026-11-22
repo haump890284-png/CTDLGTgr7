@@ -7,6 +7,9 @@ Cac file chinh:
 - QuanLyThanhVien.h, QuanLyThanhVien.cpp: them/sua/xem/xoa va hien thi thanh vien.
 - FamilyRelations.h, FamilyRelations.cpp: tra cuu cu to, cha/me, vo/chong, anh/chi/em, con cai.
 - test_Tree.cpp: bo kiem thu rieng cho module Tree.
+- benchmark.cpp: chuong trinh do hieu nang tim kiem theo ID (100, 500, 1000 thanh vien).
+- test_input.txt: kich ban dau vao cho 10 test case kiem thu tich hop (IT01 - IT10).
+- test_log.txt: nhat ky ket qua chay thuc te cua 10 test case tich hop tren main.exe.
 
 BIEN DICH CHUONG TRINH CHINH (PowerShell/MinGW):
 g++ -std=c++11 -Wall -Wextra -pedantic main.cpp Tree.cpp linkedList.cpp QuanLyThanhVien.cpp FamilyRelations.cpp -o main.exe
@@ -16,8 +19,15 @@ KIEM THU MODULE TREE RIENG:
 g++ -std=c++11 -Wall -Wextra -pedantic test_Tree.cpp Tree.cpp linkedList.cpp -o test_Tree.exe
 .\test_Tree.exe
 
+KIEM THU TICH HOP (10 TEST CASE IT01 - IT10):
+cmd /c "main.exe < test_input.txt > test_log.txt"
+
+DO HIEU NANG (BENCHMARK):
+g++ -std=c++11 -O2 benchmark.cpp Tree.cpp linkedList.cpp -o benchmark.exe
+.\benchmark.exe
+
 Luu y:
-1. Chi bien dich mot main: khong dua test_Tree.cpp vao lenh build chuong trinh chinh.
+1. Chi bien dich mot main: khong dua test_Tree.cpp hoac benchmark.cpp vao lenh build chuong trinh chinh.
 2. Tree.h la noi duy nhat dinh nghia Person, ChildNode, SpouseNode va FamilyTree.
 3. linkedList.h chi khai bao ham; linkedList.cpp chua phan cai dat.
 4. Tra cuu quan he chon thanh vien theo ID de tranh nham nguoi khi trung ho ten.
