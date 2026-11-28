@@ -2,15 +2,12 @@
 #define FAMILY_RELATIONS_H
 
 #include "Tree.h"
-#include <string>
 
-using namespace std;
-
-void inTomTatThanhVien(const Person* p);
-void xemCuTo(const FamilyTree& t);
-void timChaMe(FamilyTree& t);
-void hienThiVoChong(FamilyTree& t);
-void timAnhChiEm(FamilyTree& t);
-void hienThiConCai(FamilyTree& t);
+void printPersonSummary(const Person* p);
+void viewAncestor(const Person* root);
+void findParents(const Person* target);
+void showSpouses(const Person* target);
+void findSiblings(const Person* target);
+void showChildren(const Person* target);
 
 #endif
