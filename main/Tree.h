@@ -1,91 +1,85 @@
-// =====================================================================
-// DE TAI : CAY GIA PHA (Tree + Linked list)
-// FILE   : Tree.h
-// PHAN CUA: Lam Huy - Xay dung cau truc Tree
-//   1. Thiet ke cau truc node luu thong tin mot nguoi
-//   2. Xay dung cay gia pha (khoi tao cay)
-//   3. Tao cay va them thanh vien moi (gan node vao cay)
-//   4. Tim kiem mot nguoi trong cay (theo ID, theo ho ten)
-//   5. Quan ly node cu to (tao, lay, them the he moi phia tren cu to)
-//
-// MO HINH: cay tong quat (moi nguoi co so con khong co dinh).
-//   - Moi node Person giu con tro 'con' tro toi DSLK don cac con
-//     (cach bieu dien "danh sach con" - Chuong 5, cay K-phan, nhung
-//     dung DSLK don cua Chuong 4 thay vi vector).
-//   - Them con tro nguoc 'cha' de truy nguoc len cha/me, cu to O(h).
-//   - Khoa duy nhat la 'id' vi ho ten co the trung nhau.
-//
-// GHEP CODE:
-//   - Ten struct / ten truong / ten ham giong het khu vuc [A] trong file
-//     cua Tran Huy Hoang -> chi can xoa [A] va #include "Tree.h".
-//   - SpouseNode va ChildNode la cau truc DSLK da thong nhat voi Chan Huy.
-//     Neu file cua Chan Huy da khai bao 2 struct nay thi xoa phan
-//     "CAU TRUC DSLK" ben duoi va #include file cua Chan Huy vao day.
-// =====================================================================
 #ifndef TREE_H
 #define TREE_H
 
 #include <string>
 #include <vector>
-using namespace std;
 
-// ---------------------- CAU TRUC DSLK (thong nhat voi Chan Huy) -------
-struct Person;
-
-struct SpouseNode {          // node DSLK don ten vo/chong
-    string ten;
-    SpouseNode* next;
-};
-
-struct ChildNode {           // node DSLK don cac con cua 1 nguoi
-    Person* p;               // tro toi node con trong cay
-    ChildNode* next;
-};
-
-// ---------------------- CAU TRUC NODE CAY (Lam Huy) -------------------
 struct Person {
-    int id;                  // khoa duy nhat, tu tang
-    string hoTen;            // ho ten
-    string quanHe;           // quan he voi cha/me: "con trai", "con gai"...; cu to = "cu to"
+    int id;
+    std::string hoTen;
+    std::string gioiTinh; // "nam", "nu", "khac"/"chua ro"
     int namSinh;
-    int namMat;              // 0 = con song
-    Person* cha;             // con tro nguoc len cha/me (nullptr neu la cu to)
-    SpouseNode* vc;          // dau DSLK vo/chong
-    ChildNode* con;          // dau DSLK con (con dau tien)
+    int namMat;           // 0 = chua ro/con song
+    Person* father;
+    Person* mother;
+    Person* nextMember;
+};
+
+struct MarriageNode {
+    Person* person1;
+    Person* person2;
+    int namKetHon;        // 0 = chua ro
+    int namKetThuc;       // 0 = chua ro/chua ket thuc
+    MarriageNode* next;
 };
 
 struct FamilyTree {
-    Person* root = nullptr;  // node cu to (goc cua cay)
-    int nextId = 1;          // ID se cap cho nguoi tiep theo
+    Person* members;          // dau danh sach tat ca thanh vien
+    MarriageNode* marriages;  // dau danh sach cac quan he hon nhan
+    int nextId;
 };
 
-// ---------------------- 1. Khoi tao / tao node ------------------------
-void    khoiTaoCay(FamilyTree& t);                       // O(1)
-bool    laCayRong(const FamilyTree& t);                  // O(1)
-Person* TaoNode(FamilyTree& t, const string& ten, const string& qh,
-                int ns, int nm);                         // O(1)
+void khoiTaoCay(FamilyTree& t);
+bool laCayRong(const FamilyTree& t); // true neu chua co thanh vien
+Person* TaoNode(FamilyTree& t, const std::string& ten,
+                const std::string& gioiTinh, int ns, int nm);
+Person* TaoNode(FamilyTree& t, const std::string& ten, int ns, int nm);
 
-// ---------------------- 2. Them thanh vien ----------------------------
-void    ThemCon(Person* cha, Person* con);               // them cuoi DSLK con, O(k)
-bool    themVaoCay(FamilyTree& t, Person* cha, Person* p); // gan node vao cay
+// Them mot Person vao danh sach chung; khong tu dong gan cha/me.
+bool themThanhVien(FamilyTree& t, Person* p);
+Person* taoCuTo(FamilyTree& t, const std::string& ten,
+                const std::string& gioiTinh, int ns, int nm);
 
-// ---------------------- 3. Quan ly cu to ------------------------------
-Person* taoCuTo(FamilyTree& t, const string& ten, int ns, int nm);
-Person* layCuTo(const FamilyTree& t);                    // O(1)
-Person* timCuTo(Person* p);                              // di nguoc len goc, O(h)
-bool    themCuToMoi(FamilyTree& t, Person* cuToMoi, const string& qhCuToCu);
+// Gan cha va me cho con. Cha/me co the nullptr neu chua biet.
+// Tu choi neu tao vong lap to tien.
+bool ganChaMe(Person* con, Person* cha, Person* me);
 
-// ---------------------- 4. Tim kiem -----------------------------------
-Person* TimTheoId(Person* r, int id);                    // DFS NLR, O(n)
-void    TimTheoTen(Person* r, const string& ten, vector<Person*>& kq); // O(n)
-bool    soSanhTen(const string& a, const string& b);     // khong phan biet hoa/thuong, khoang trang thua
+// Them mot quan he hon nhan; moi cap nguoi chi co mot ban ghi cho
+// mot cuoc hon nhan. Cho phep mot nguoi co nhieu cuoc hon nhan.
+bool themHonNhan(FamilyTree& t, Person* a, Person* b,
+                 int namKetHon = 0, int namKetThuc = 0);
+bool ketThucHonNhan(FamilyTree& t, Person* a, Person* b, int namKetThuc);
 
-// ---------------------- 5. Cac dai luong cua cay (Chuong 5) -----------
-int  layDoi(const Person* p);                            // muc + 1 (cu to la doi 1), O(h)
-int  chieuCao(const Person* r);                          // chieu cao cay con, O(n)
-int  bacCuaNode(const Person* p);                        // so con, O(k)
-int  demSoNode(const Person* r);                         // so nguoi, O(n)
-int  demSoLa(const Person* r);                           // so nguoi chua co con, O(n)
-void inTheoDoi(const FamilyTree& t);                     // duyet theo muc (BFS), O(n)
+// Tim kiem
+Person* TimTheoId(const FamilyTree& t, int id);
+void TimTheoTen(const FamilyTree& t, const std::string& ten,
+                std::vector<Person*>& kq);
+bool soSanhTen(const std::string& a, const std::string& b);
+
+// Truy van quan he
+void layVoChong(const FamilyTree& t, const Person* p,
+                std::vector<Person*>& kq);
+void layCon(const FamilyTree& t, const Person* p,
+            std::vector<Person*>& kq);
+void layAnhChiEm(const FamilyTree& t, const Person* p,
+                 std::vector<Person*>& kq);
+std::string loaiAnhChiEm(const Person* a, const Person* b);
+
+// Lay toan bo to tien / hau due, tranh lap bang visited.
+void layToTien(const Person* p, std::vector<Person*>& kq);
+void layHauDue(const FamilyTree& t, const Person* p,
+               std::vector<Person*>& kq);
+
+// Cac thanh vien khong co thong tin cha va me duoc xem la dau nhanh
+// to tien dang ghi nhan, khong khang dinh la thuy to dau tien thuc te.
+void layDauNhanhToTien(const FamilyTree& t, std::vector<Person*>& kq);
+
+// Hien thi
+void inDanhSachThanhVien(const FamilyTree& t);
+void inQuanHeHonNhan(const FamilyTree& t);
+void inGiaPhaTheoTheHe(const FamilyTree& t);
+
+// Giai phong toan bo bo nho do FamilyTree quan ly.
+void giaiPhongCay(FamilyTree& t);
 
 #endif
