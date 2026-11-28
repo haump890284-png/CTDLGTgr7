@@ -10,13 +10,13 @@ void chayBenchmark(int n) {
     khoiTaoCay(t);
 
     // Tao cu to
-    Person* root = TaoNode(t, "Nguoi 1", "cu to", 1900, 0);
+    Person* root = TaoNode(t, "Nguoi 1", "cu to", 1900, 0, GioiTinh::Nam);
     themVaoCay(t, nullptr, root);
 
     // Tao n - 1 thanh vien con truc tiep
     for (int i = 2; i <= n; i++) {
         Person* p = TaoNode(t, "Nguoi " + to_string(i),
-                            "con", 1900 + i, 0);
+                            "con", 1900 + i, 0, GioiTinh::Nam);
         themVaoCay(t, root, p);
     }
 
