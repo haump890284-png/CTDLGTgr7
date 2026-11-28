@@ -1,127 +1,117 @@
-#include "linkedList.h"
+#include "LinkedList.h"
 #include <iostream>
 
-using namespace std;
-
-// ==================== DANH SACH VO / CHONG ====================
-SpouseNode* createSpouse(const string& ten) {
-    SpouseNode* p = new SpouseNode;
-    p->ten = ten;
-    p->next = nullptr;
-    return p;
+SpouseNode* createSpouse(const std::string& ten) {
+    SpouseNode* node = new SpouseNode;
+    node->ten = ten;
+    node->next = nullptr;
+    return node;
 }
 
-void addSpouse(SpouseNode*& head, const string& ten) {
-    if (ten.empty()) return;
-
-    SpouseNode* p = createSpouse(ten);
+void addSpouse(SpouseNode*& head, const std::string& ten) {
+    SpouseNode* node = createSpouse(ten);
     if (head == nullptr) {
-        head = p;
+        head = node;
         return;
     }
-
-    SpouseNode* cur = head;
-    while (cur->next != nullptr)
-        cur = cur->next;
-    cur->next = p;
+    SpouseNode* temp = head;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+    temp->next = node;
 }
 
-SpouseNode* findSpouse(SpouseNode* head, const string& ten) {
-    SpouseNode* cur = head;
-    while (cur != nullptr) {
-        if (cur->ten == ten)
-            return cur;
-        cur = cur->next;
+SpouseNode* findSpouse(SpouseNode* head, const std::string& ten) {
+    SpouseNode* temp = head;
+    while (temp != nullptr) {
+        if (temp->ten == ten) {
+            return temp;
+        }
+        temp = temp->next;
     }
     return nullptr;
 }
 
-bool removeSpouse(SpouseNode*& head, const string& ten) {
+bool removeSpouse(SpouseNode*& head, const std::string& ten) {
     SpouseNode* prev = nullptr;
     SpouseNode* cur = head;
-
     while (cur != nullptr && cur->ten != ten) {
         prev = cur;
         cur = cur->next;
     }
-    if (cur == nullptr) return false;
-
-    if (prev == nullptr)
+    if (cur == nullptr) {
+        return false;
+    }
+    if (prev == nullptr) {
         head = cur->next;
-    else
+    } else {
         prev->next = cur->next;
-
+    }
     delete cur;
     return true;
 }
 
 bool renameSpouse(SpouseNode* head,
-                  const string& oldName,
-                  const string& newName) {
-    if (newName.empty()) return false;
-    SpouseNode* p = findSpouse(head, oldName);
-    if (p == nullptr) return false;
-
-    p->ten = newName;
+                  const std::string& oldName,
+                  const std::string& newName) {
+    SpouseNode* node = findSpouse(head, oldName);
+    if (node == nullptr) {
+        return false;
+    }
+    node->ten = newName;
     return true;
 }
 
 void printSpouses(SpouseNode* head) {
     if (head == nullptr) {
-        cout << "Khong co";
+        std::cout << "Khong co";
         return;
     }
-
-    SpouseNode* cur = head;
-    while (cur != nullptr) {
-        cout << cur->ten;
-        if (cur->next != nullptr) cout << ", ";
-        cur = cur->next;
+    SpouseNode* temp = head;
+    while (temp != nullptr) {
+        std::cout << temp->ten;
+        if (temp->next != nullptr) {
+            std::cout << ", ";
+        }
+        temp = temp->next;
     }
 }
 
 void clearSpouses(SpouseNode*& head) {
     while (head != nullptr) {
-        SpouseNode* tmp = head;
+        SpouseNode* temp = head;
         head = head->next;
-        delete tmp;
+        delete temp;
     }
 }
 
-// ==================== DANH SACH CON ====================
 ChildNode* createChild(Person* person) {
-    if (person == nullptr) return nullptr;
-
-    ChildNode* p = new ChildNode;
-    p->p = person;
-    p->next = nullptr;
-    return p;
+    ChildNode* node = new ChildNode;
+    node->p = person;
+    node->next = nullptr;
+    return node;
 }
 
 void addChild(ChildNode*& head, Person* person) {
-    if (person == nullptr || findChild(head, person) != nullptr)
-        return;
-
-    ChildNode* p = createChild(person);
-    if (p == nullptr) return;
-
+    ChildNode* node = createChild(person);
     if (head == nullptr) {
-        head = p;
+        head = node;
         return;
     }
-
-    ChildNode* cur = head;
-    while (cur->next != nullptr)
-        cur = cur->next;
-    cur->next = p;
+    ChildNode* temp = head;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+    temp->next = node;
 }
 
 ChildNode* findChild(ChildNode* head, Person* person) {
-    ChildNode* cur = head;
-    while (cur != nullptr) {
-        if (cur->p == person)
-            return cur;
-        cur = cur->next;
+    ChildNode* temp = head;
+    while (temp != nullptr) {
+        if (temp->p == person) {
+            return temp;
+        }
+        temp = temp->next;
     }
     return nullptr;
 }
@@ -129,45 +119,44 @@ ChildNode* findChild(ChildNode* head, Person* person) {
 bool removeChild(ChildNode*& head, Person* person) {
     ChildNode* prev = nullptr;
     ChildNode* cur = head;
-
     while (cur != nullptr && cur->p != person) {
         prev = cur;
         cur = cur->next;
     }
-    if (cur == nullptr) return false;
-
-    if (prev == nullptr)
+    if (cur == nullptr) {
+        return false;
+    }
+    if (prev == nullptr) {
         head = cur->next;
-    else
+    } else {
         prev->next = cur->next;
-
-    // Chi xoa node danh sach; Person do cay gia pha quan ly.
+    }
     delete cur;
     return true;
 }
 
 void traverseChildren(ChildNode* head, void (*visit)(Person*)) {
-    if (visit == nullptr) return;
-
-    ChildNode* cur = head;
-    while (cur != nullptr) {
-        visit(cur->p);
-        cur = cur->next;
+    ChildNode* temp = head;
+    while (temp != nullptr) {
+        visit(temp->p);
+        temp = temp->next;
     }
 }
 
 int countChildren(ChildNode* head) {
     int count = 0;
-    for (ChildNode* cur = head; cur != nullptr; cur = cur->next)
-        ++count;
+    ChildNode* temp = head;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
     return count;
 }
 
 void clearChildren(ChildNode*& head) {
     while (head != nullptr) {
-        ChildNode* tmp = head;
+        ChildNode* temp = head;
         head = head->next;
-        // Khong delete tmp->p vi Person* thuoc quyen quan ly cua Tree.
-        delete tmp;
+        delete temp;
     }
 }
